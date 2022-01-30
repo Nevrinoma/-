@@ -11,15 +11,15 @@ def x2_uravn(event):
     if D >= 0:
         x1 = (-float(b) + sqrt(float(D))) / (2*float(a))
         x2 = (-float(b) - sqrt(float(D))) / (2*float(a))
-        lbl4.configure(text=f"""D >>> {round(D,2)}
+        lbl5.configure(text=f"""D >>> {round(D,2)}
         x1 >>> {round(x1,2)}
         x2 >>> {round(x2,2)}""")
     elif D == 0:
         x1 = (-float(b)/2*float(a))
-        lbl4.configure(text=f"""D >>> {D}
+        lbl5.configure(text=f"""D >>> {D}
         x >>> {x1}""")
     else:
-        lbl4.configure(text=f"""D >>> Нет решений
+        lbl5.configure(text=f"""D >>> Нет решений
         x1 >>> Нет решений
         x2 >>> Нет решений""")
 
